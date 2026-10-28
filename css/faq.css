@@ -1,0 +1,503 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#f8f5f2;
+    color:#333;
+    line-height:1.7;
+
+}
+
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background:#4b1010;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+
+
+.navbar ul li{
+
+    margin-left:22px;
+
+}
+
+
+
+.navbar ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+
+
+.navbar ul li a:hover{
+
+    color:#FFD700;
+
+}
+
+
+
+
+
+/* ===========================
+   Hero Section
+=========================== */
+
+
+.hero{
+
+
+    height:55vh;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+
+    url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.hero h1{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   FAQ Section
+=========================== */
+
+
+.faq-section{
+
+    width:85%;
+
+    margin:70px auto;
+
+}
+
+
+
+.faq-section h2{
+
+    text-align:center;
+
+    color:#4b1010;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+.faq-container{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+
+}
+
+
+
+
+.faq-item{
+
+
+    background:white;
+
+
+    border-radius:12px;
+
+
+    padding:25px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,0.12);
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.faq-item:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+.faq-question{
+
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    color:#4b1010;
+
+
+    font-size:20px;
+
+
+    font-weight:600;
+
+
+    text-align:left;
+
+}
+
+
+
+.faq-question span{
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+.faq-answer{
+
+
+    margin-top:15px;
+
+
+    display:none;
+
+
+    font-size:17px;
+
+
+    color:#555;
+
+
+}
+
+
+
+
+
+.faq-item.active .faq-answer{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   Contact Support Section
+=========================== */
+
+
+.support{
+
+
+    width:85%;
+
+    margin:50px auto;
+
+
+    background:white;
+
+
+    padding:45px;
+
+
+    border-radius:15px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.12);
+
+
+}
+
+
+
+.support h2{
+
+
+    color:#4b1010;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.support p{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   Footer
+=========================== */
+
+
+footer{
+
+
+    background:#4b1010;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:25px;
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.navbar{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.navbar ul{
+
+
+    margin-top:15px;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.navbar ul li{
+
+
+    margin:8px;
+
+
+}
+
+
+
+.hero h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.hero p{
+
+
+    font-size:17px;
+
+
+}
+
+
+
+.faq-section{
+
+
+    width:90%;
+
+
+}
+
+
+
+.support{
+
+
+    padding:30px 20px;
+
+
+}
+
+
+
+}

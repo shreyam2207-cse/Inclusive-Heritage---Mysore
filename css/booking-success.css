@@ -1,0 +1,239 @@
+/* ===============================
+   Google Font & Reset
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===============================
+   Body
+================================ */
+
+body{
+
+    background:linear-gradient(135deg,#f7f2eb,#fdfdfd);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:40px;
+
+}
+
+/* ===============================
+   Main Card
+================================ */
+
+.success-container{
+
+    width:750px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    text-align:center;
+
+}
+
+/* ===============================
+   Tick Circle
+================================ */
+
+.tick-circle{
+
+    width:120px;
+    height:120px;
+
+    background:#28a745;
+
+    color:white;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:70px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+/* ===============================
+   Heading
+================================ */
+
+.success-container h1{
+
+    color:#4b1010;
+
+    margin-bottom:10px;
+
+}
+
+.message{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+/* ===============================
+   Booking Details
+================================ */
+
+.details{
+
+    text-align:left;
+
+    background:#fafafa;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:30px;
+
+}
+
+.details h2{
+
+    color:#4b1010;
+
+    margin-bottom:15px;
+
+}
+
+.details p{
+
+    margin:12px 0;
+
+    font-size:17px;
+
+}
+
+/* ===============================
+   Guide Box
+================================ */
+
+.guide-box{
+
+    text-align:left;
+
+    background:#f4fff4;
+
+    border-left:6px solid #28a745;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:35px;
+
+}
+
+.guide-box h2{
+
+    color:#0b7a2c;
+
+    margin-bottom:15px;
+
+}
+
+.guide-box p{
+
+    margin:12px 0;
+
+    font-size:17px;
+
+}
+
+/* ===============================
+   Button
+================================ */
+
+.home-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#4b1010;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+.home-btn:hover{
+
+    background:#7a1d1d;
+
+    transform:scale(1.05);
+
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media(max-width:768px){
+
+.success-container{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+.tick-circle{
+
+    width:90px;
+    height:90px;
+
+    font-size:50px;
+
+}
+
+.details p,
+.guide-box p{
+
+    font-size:15px;
+
+}
+
+.home-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+}

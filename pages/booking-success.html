@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking Successful</title>
+
+<link rel="stylesheet" href="../css/booking-success.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="success-container">
+
+<div class="tick-circle">
+
+✔
+
+</div>
+
+<h1>Booking Successful!</h1>
+
+<p class="message">
+
+Thank you for booking your Mysore Palace visit.
+
+</p>
+
+<div class="details">
+
+<h2>Booking Details</h2>
+
+<p><strong>Booking ID :</strong> <span id="bookingID"></span></p>
+
+<p><strong>Visitor Name :</strong> <span id="visitor"></span></p>
+
+<p><strong>Email :</strong> <span id="email"></span></p>
+
+<p><strong>Phone :</strong> <span id="phone"></span></p>
+
+<p><strong>Date of Visit :</strong> <span id="date"></span></p>
+
+<p><strong>Number of Visitors :</strong> <span id="visitors"></span></p>
+
+<p><strong>Visitor Type :</strong> <span id="visitorType"></span></p>
+
+<p><strong>Payment Method :</strong> <span id="payment"></span></p>
+
+</div>
+
+<div class="guide-box">
+
+<h2>Official Guide Information</h2>
+
+<p><strong>Guide Required :</strong> <span id="guideRequired"></span></p>
+
+<p><strong>Guide Name :</strong> <span id="guideName"></span></p>
+
+<p><strong>Guide ID :</strong> <span id="guideID"></span></p>
+
+<p><strong>Phone Number :</strong> <span id="guidePhone"></span></p>
+
+</div>
+
+<a href="../index.html" class="home-btn">
+
+Back to Home
+
+</a>
+
+</div>
+
+<script>
+
+document.getElementById("bookingID").textContent =
+localStorage.getItem("bookingID");
+
+document.getElementById("visitor").textContent =
+localStorage.getItem("visitor");
+
+document.getElementById("email").textContent =
+localStorage.getItem("email");
+
+document.getElementById("phone").textContent =
+localStorage.getItem("phone");
+
+document.getElementById("date").textContent =
+localStorage.getItem("date");
+
+document.getElementById("visitors").textContent =
+localStorage.getItem("visitors");
+
+document.getElementById("visitorType").textContent =
+localStorage.getItem("visitorType");
+
+document.getElementById("payment").textContent =
+localStorage.getItem("payment");
+
+document.getElementById("guideRequired").textContent =
+localStorage.getItem("guideRequired");
+
+document.getElementById("guideName").textContent =
+localStorage.getItem("guideName");
+
+document.getElementById("guideID").textContent =
+localStorage.getItem("guideID");
+
+document.getElementById("guidePhone").textContent =
+localStorage.getItem("guidePhone");
+
+</script>
+
+</body>
+
+</html>

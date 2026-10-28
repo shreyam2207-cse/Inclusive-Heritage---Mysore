@@ -1,0 +1,440 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+    background:#f8f5f2;
+    color:#333;
+    line-height:1.7;
+}
+
+
+/* ===========================
+   Navigation Bar
+=========================== */
+
+
+.navbar{
+
+    background:#4b1010;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+}
+
+
+
+.navbar ul{
+
+    display:flex;
+    list-style:none;
+
+}
+
+
+.navbar ul li{
+
+    margin-left:22px;
+
+}
+
+
+.navbar ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    transition:0.3s;
+
+}
+
+
+.navbar ul li a:hover{
+
+    color:#FFD700;
+
+}
+
+
+
+
+/* ===========================
+   Hero Section
+=========================== */
+
+
+.hero{
+
+    height:65vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg");
+
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+
+    padding:20px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:52px;
+    margin-bottom:20px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:20px;
+    max-width:750px;
+
+}
+
+
+
+
+/* ===========================
+   About Section
+=========================== */
+
+
+.about-section{
+
+    width:90%;
+    margin:70px auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:50px;
+
+}
+
+
+
+.text{
+
+    flex:1;
+
+}
+
+
+
+.text h2{
+
+    color:#4b1010;
+    font-size:38px;
+    margin-bottom:20px;
+
+}
+
+
+
+.text p{
+
+    font-size:18px;
+    text-align:justify;
+
+}
+
+
+
+.image{
+
+    flex:1;
+
+}
+
+
+
+.image img{
+
+    width:100%;
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+
+
+
+/* ===========================
+   Mission Section
+=========================== */
+
+
+.mission{
+
+    width:85%;
+    margin:40px auto;
+
+    text-align:center;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.12);
+
+}
+
+
+
+.mission h2{
+
+    color:#4b1010;
+    font-size:38px;
+    margin-bottom:20px;
+
+}
+
+
+
+.mission p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ===========================
+   Highlights Cards
+=========================== */
+
+
+.highlights{
+
+    width:90%;
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+
+
+.highlights h2{
+
+    color:#4b1010;
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+.card{
+
+    width:320px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.card h3{
+
+    color:#4b1010;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+
+
+.card p{
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ===========================
+   Footer
+=========================== */
+
+
+footer{
+
+    background:#4b1010;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+
+
+.navbar ul{
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+
+.navbar ul li{
+
+    margin:8px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:38px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:17px;
+
+}
+
+
+
+.about-section{
+
+    flex-direction:column;
+
+}
+
+
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.mission{
+
+    padding:30px 20px;
+
+}
+
+
+
+}

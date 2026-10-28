@@ -1,0 +1,700 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#f8f5f2;
+    color:#333;
+    line-height:1.7;
+
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+
+.navbar{
+
+    background:#4b1010;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+
+
+.navbar ul li{
+
+    margin-left:22px;
+
+}
+
+
+
+.navbar ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+.navbar ul li a:hover{
+
+    color:#FFD700;
+
+}
+
+
+
+
+/* ===========================
+   Hero Section
+=========================== */
+
+
+.hero{
+
+
+    height:90vh;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+
+   url("mysore_palace.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+    color:white;
+
+
+}
+
+
+
+.hero-content{
+
+
+    max-width:900px;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-size:60px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    font-size:22px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+
+.btn{
+
+
+    display:inline-block;
+
+
+    padding:14px 35px;
+
+
+    background:#FFD700;
+
+
+    color:#4b1010;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+
+    font-weight:600;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.btn:hover{
+
+
+    background:white;
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+/* ===========================
+   Sections
+=========================== */
+
+
+.section{
+
+
+    width:90%;
+
+
+    margin:70px auto;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.section h2{
+
+
+    color:#4b1010;
+
+
+    font-size:38px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+/* ===========================
+   Cards
+=========================== */
+
+
+.cards{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:30px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+.card{
+
+
+    background:white;
+
+
+    width:320px;
+
+
+    padding:30px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.15);
+
+
+    transition:0.4s;
+
+
+}
+
+
+
+
+.card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.card h3{
+
+
+    color:#4b1010;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* ===========================
+   About Preview
+=========================== */
+
+
+.about-preview{
+
+
+    width:90%;
+
+
+    margin:70px auto;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:40px;
+
+
+}
+
+
+
+
+.about-preview img{
+
+
+    width:50%;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+.about-preview div{
+
+
+    flex:1;
+
+
+}
+
+
+
+
+.about-preview h2{
+
+
+    color:#4b1010;
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+/* ===========================
+   Features
+=========================== */
+
+
+.features{
+
+
+    width:90%;
+
+
+    margin:70px auto;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.features h2{
+
+
+    color:#4b1010;
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+/* ===========================
+   Footer
+=========================== */
+
+
+footer{
+
+
+    background:#4b1010;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.navbar{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.navbar ul{
+
+
+    margin-top:15px;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.navbar ul li{
+
+
+    margin:8px;
+
+
+}
+
+
+
+.hero-content h1{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+.about-preview{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.about-preview img{
+
+
+    width:100%;
+
+
+}
+
+
+
+}
+
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+}
+
+.about-text h2{
+    font-size:40px;
+    color:#4b1010;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+}
+
+
+/* ===========================
+   Solution Section
+=========================== */
+
+.solution{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.solution h2{
+    font-size:40px;
+    color:#4b1010;
+    margin-bottom:30px;
+}
+
+.solution-box{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.solution-box p{
+    font-size:18px;
+    margin-bottom:20px;
+    color:#555;
+    line-height:1.8;
+}
+
+.solution-box b{
+    color:#4b1010;
+}
+
+
+/* ===========================
+   Call To Action
+=========================== */
+
+.cta{
+    background:linear-gradient(rgba(75,16,16,0.9),rgba(75,16,16,0.9));
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+    margin-top:80px;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    font-size:18px;
+    max-width:700px;
+    margin:0 auto 35px;
+}
+
+.cta .btn{
+    background:#FFD700;
+    color:#4b1010;
+}
+
+.cta .btn:hover{
+    background:white;
+}
+
+
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.about,
+.solution{
+    width:95%;
+}
+
+.about-text h2,
+.solution h2,
+.cta h2{
+    font-size:30px;
+}
+
+.about-text p,
+.solution-box p,
+.cta p{
+    font-size:16px;
+}
+
+.solution-box{
+    padding:25px;
+}
+
+}

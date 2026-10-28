@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Tickets | Inclusive Heritage</title>
+
+    <link rel="stylesheet" href="../css/tickets.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Inclusive Heritage
+        </div>
+
+        <ul>
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="virtualtour.html">Virtual Tour</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>Book Your Tickets</h1>
+
+        <p>
+
+            Skip the queues and reserve your Mysore Palace visit online.
+
+        </p>
+
+    </section>
+
+    <!-- Booking Form -->
+
+    <section class="booking-container">
+
+        <div class="booking-box">
+
+            <h2>Online Ticket Booking</h2>
+
+            <form id="bookingForm">
+
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your 10-digit mobile number" required>
+
+                <label>Date of Visit</label>
+                <input type="date" id="date" required>
+
+                <label>Number of Visitors</label>
+                <input type="number" id="visitors" min="1" max="20" value="1" required>
+
+                <label>Visitor Type</label>
+
+                <select id="visitorType">
+
+                    <option>Regular Visitor</option>
+                    <option>Student</option>
+                    <option>Senior Citizen</option>
+                    <option>Foreign Tourist</option>
+
+                </select>
+
+                <label>Need a Guide?</label>
+
+                <select id="guide">
+
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+
+                </select>
+
+                <label>Payment Method</label>
+
+                <select id="payment">
+
+                    <option>UPI</option>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>Net Banking</option>
+
+                </select>
+
+                <button type="submit" class="btn">
+
+                    Book Now
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Visitor Information -->
+
+    <section class="info">
+
+        <h2>Visitor Information</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>🎓 Student Concession</h3>
+
+                <p>
+
+                    Students carrying a valid student ID card are eligible for concession on ticket prices.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>💳 Digital Payments</h3>
+
+                <p>
+
+                    Pay securely using UPI, Credit Card, Debit Card or Net Banking.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>👨‍🏫 Official Guided Tours</h3>
+
+                <p>
+
+                    Select <b>Yes</b> in the <b>Need a Guide?</b> option while booking.
+
+                    <br><br>
+
+                    An official KSTDC guide will be automatically assigned after your booking is confirmed.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Inclusive Heritage | Enhancing Immersion and Accessibility at Mysore Palace
+
+        </p>
+
+    </footer>
+
+    <script src="../js/tickets.js"></script>
+
+</body>
+
+</html>
